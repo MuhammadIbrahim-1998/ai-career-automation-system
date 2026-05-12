@@ -1,0 +1,31 @@
+name: Job Scraper
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run job scraper script
+        run: python scripts/job_scraper_script.py
+
+      - name: Commit generated job listings
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update job listings"
+          file_pattern: data/job_listings.csv
