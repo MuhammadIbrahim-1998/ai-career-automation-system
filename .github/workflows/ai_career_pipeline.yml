@@ -1,0 +1,35 @@
+name: AI Career Pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ai-career-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run job matcher
+        run: python scripts/job_matcher.py
+
+      - name: Generate cover letters
+        run: python scripts/cover_letter_generator.py
+
+      - name: Commit generated reports
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update AI career pipeline reports"
+          file_pattern: data/job_match_report.csv data/cover_letters.txt
