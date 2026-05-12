@@ -1,0 +1,13 @@
+ATS Resume Audit Report
+=======================
+
+Total Keywords: 22
+Keywords Found: 20
+Missing Keywords: 2
+ATS Keyword Score: 90.91%
+
+Found Keywords:
+ASP.NET MVC, ASP.NET Web API, SQL Server, Entity Framework Core, Python, GitHub Actions, DevOps, Docker, Kubernetes, Cloud, AI, Machine Learning, Automation, REST APIs, Git, GitHub, n8n, CI/CD, Backend, API
+
+Missing Keywords:
+.NET Core, C#
