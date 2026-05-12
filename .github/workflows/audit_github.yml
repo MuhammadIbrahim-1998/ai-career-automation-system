@@ -1,0 +1,37 @@
+name: GitHub Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  audit-github:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run resume audit
+        run: python scripts/resume_audit.py
+
+      - name: Run GitHub profile analysis
+        run: python scripts/github_profile_analysis.py
+
+      - name: Commit audit reports
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update audit reports"
+          file_pattern: data/resume_audit_report.txt data/github_profile_analysis.csv

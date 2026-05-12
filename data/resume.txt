@@ -1,0 +1,26 @@
+Muhammad Ibrahim
+
+Objective:
+Remote .NET Backend Developer and AI Automation Engineer focused on backend systems, APIs, cloud, DevOps, automation, and AI integration.
+
+Skills:
+- .NET Core
+- ASP.NET MVC
+- ASP.NET Web API
+- C#
+- SQL Server
+- Entity Framework Core
+- Python
+- GitHub Actions
+- DevOps
+- Docker
+- Kubernetes
+- Cloud
+- AI
+- Machine Learning
+- Automation
+- REST APIs
+- Git
+- GitHub
+- n8n
+- CI/CD
