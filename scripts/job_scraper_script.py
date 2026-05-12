@@ -1,42 +1,65 @@
+import requests
 import csv
-from datetime import datetime
 from pathlib import Path
+from datetime import datetime
 
-JOBS = [
-    {
-        "title": "AI Backend Developer",
-        "company": "Demo Company",
-        "location": "Remote",
-        "skills": "Python, APIs, LLMs, GitHub Actions",
-        "source": "Demo Data"
-    },
-    {
-        "title": ".NET AI Automation Engineer",
-        "company": "Demo Tech",
-        "location": "Remote",
-        "skills": "C#, ASP.NET Core, Python, Automation",
-        "source": "Demo Data"
+def fetch_remoteok_jobs():
+    url = "https://remoteok.com/api"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0"
     }
-]
 
-def save_jobs():
+    response = requests.get(url, headers=headers)
+
+    if response.status_code != 200:
+        print("Failed to fetch jobs")
+        return []
+
+    data = response.json()
+
+    jobs = []
+
+    for job in data[1:]:
+        jobs.append({
+            "title": job.get("position"),
+            "company": job.get("company"),
+            "location": job.get("location"),
+            "tags": ", ".join(job.get("tags", [])),
+            "url": job.get("url"),
+            "scraped_at": datetime.utcnow().isoformat()
+        })
+
+    return jobs
+
+def save_jobs_to_csv(jobs):
     output_dir = Path("data")
     output_dir.mkdir(exist_ok=True)
 
-    file_path = output_dir / "job_listings.csv"
+    csv_file = output_dir / "job_listings.csv"
 
-    with open(file_path, "w", newline="", encoding="utf-8") as file:
+    with open(csv_file, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(
             file,
-            fieldnames=["title", "company", "location", "skills", "source", "scraped_at"]
+            fieldnames=[
+                "title",
+                "company",
+                "location",
+                "tags",
+                "url",
+                "scraped_at"
+            ]
         )
+
         writer.writeheader()
+        writer.writerows(jobs)
 
-        for job in JOBS:
-            job["scraped_at"] = datetime.utcnow().isoformat()
-            writer.writerow(job)
-
-    print(f"Saved {len(JOBS)} jobs to {file_path}")
+    print(f"Saved {len(jobs)} jobs to {csv_file}")
 
 if __name__ == "__main__":
-    save_jobs()
+    jobs = fetch_remoteok_jobs()
+
+    if jobs:
+        save_jobs_to_csv(jobs)
+    else:
+        print("No jobs found")

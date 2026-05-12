@@ -21,11 +21,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run job scraper script
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run job scraper
         run: python scripts/job_scraper_script.py
 
-      - name: Commit generated job listings
+      - name: Commit updated CSV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update job listings"
+          commit_message: "Update remote job listings"
           file_pattern: data/job_listings.csv
