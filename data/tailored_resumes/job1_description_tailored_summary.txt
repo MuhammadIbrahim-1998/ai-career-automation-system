@@ -1,0 +1,35 @@
+Tailored Resume Summary
+
+This profile is aligned with the target role through the following matching areas:
+
+- backend
+- experience
+- systems
+- engineer
+- apis
+- python
+- rest
+- api
+- development
+- ci
+- cd
+- pipelines
+- docker
+- platforms
+- building
+
+Suggested Profile Summary:
+
+Backend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent workflow automation and career intelligence systems.
+
+Resume Improvement Suggestions
+
+- Add relevant proof or experience for: senior
+- Add relevant proof or experience for: requirements
+- Add relevant proof or experience for: distributed
+- Add relevant proof or experience for: strong
+- Add relevant proof or experience for: node.js
+- Add relevant proof or experience for: api
+- Add relevant proof or experience for: cloud
+- Add relevant proof or experience for: services
+- Add relevant proof or experience for: familiarity

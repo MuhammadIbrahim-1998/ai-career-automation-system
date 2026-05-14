@@ -1,0 +1,5 @@
+Experienced Backend and AI Automation Engineer with expertise in ASP.NET Core, Flask, REST APIs, PostgreSQL, Docker, GitHub Actions, CI/CD pipelines, AI automation workflows, and backend system architecture.
+
+Skilled in Python backend development, AI workflow automation, DevOps concepts, automation pipelines, and scalable backend engineering.
+
+Experience building AI-powered systems including ATS analysis engines, automation platforms, GitHub workflow systems, and intelligent backend pipelines.

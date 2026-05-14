@@ -1,0 +1,40 @@
+Job Description Analysis
+
+ATS Match Score: 17.65%
+
+Strong Matching Keywords:
+- ai
+- backend
+- ci/cd
+
+Missing Important Keywords:
+- api design
+- authentication
+- authorization
+- aws
+- azure
+- distributed systems
+- gcp
+- monitoring
+- next.js
+- node.js
+- react
+- security
+- testing
+- typescript
+
+Resume Improvement Suggestions:
+- Add relevant experience or project proof for: api design
+- Add relevant experience or project proof for: authentication
+- Add relevant experience or project proof for: authorization
+- Add relevant experience or project proof for: aws
+- Add relevant experience or project proof for: azure
+- Add relevant experience or project proof for: distributed systems
+- Add relevant experience or project proof for: gcp
+- Add relevant experience or project proof for: monitoring
+- Add relevant experience or project proof for: next.js
+- Add relevant experience or project proof for: node.js
+- Add relevant experience or project proof for: react
+- Add relevant experience or project proof for: security
+- Add relevant experience or project proof for: testing
+- Add relevant experience or project proof for: typescript

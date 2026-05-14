@@ -1,0 +1,24 @@
+Senior Software Engineer
+
+Responsibilities:
+
+* Design, build, and maintain scalable backend services and APIs.
+* Collaborate cross-functionally to translate business needs into technical solutions.
+* Own end-to-end projects from design to deployment and monitoring.
+* Ensure code quality, reliability, and security using testing, CI/CD, and monitoring.
+* Participate in architectural discussions and contribute to technical vision.
+
+Requirements:
+
+* Strong programming skills in TypeScript, Node.js, Next.js, and React.
+* Strong understanding of backend architecture, distributed systems, and API design.
+* Experience with relational databases and data modeling.
+* Experience building production-grade systems.
+* Strong problem-solving and communication skills.
+
+Preferred Qualifications:
+
+* Knowledge of AWS, GCP, or Azure.
+* Experience with authentication/authorization systems.
+* Experience with security best practices.
+* Experience mentoring engineers.

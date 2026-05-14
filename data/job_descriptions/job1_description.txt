@@ -1,0 +1,10 @@
+Senior Backend Engineer
+
+Requirements:
+- Experience with backend APIs and distributed systems
+- Strong Python or Node.js experience
+- REST API development
+- CI/CD pipelines
+- Docker and cloud platforms
+- Experience building scalable backend services
+- Familiarity with AI automation systems
