@@ -1,2 +1,11 @@
 Job,Similarity Score,Status
-job1_description.txt,0.7811,HIGH MATCH
+akuity_senior_backend_engineer.txt,0.4522,HIGH MATCH
+civitech_analytics_engineer.txt,0.3053,LOW MATCH
+clariti_cloud_inc_senior_software_engineer_i.txt,0.475,HIGH MATCH
+contact_government_services_llc_senior_veritas_ediscovery_platform_engineer.txt,0.2209,LOW MATCH
+csc_generation_lead_software_engineer.txt,0.3201,LOW MATCH
+extend_principal_data_engineer.txt,0.4102,MEDIUM MATCH
+phaidra_senior_software_engineer.txt,0.4073,MEDIUM MATCH
+quanata_cloud_enablement_engineer_us.txt,0.3955,MEDIUM MATCH
+valon_mortgage_senior_data_engineer.txt,0.3601,MEDIUM MATCH
+wealthsimple_technologies_senior_ai_system_software_developer.txt,0.3834,MEDIUM MATCH

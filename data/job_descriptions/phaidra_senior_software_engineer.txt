@@ -1,0 +1,24 @@
+Job Title: Senior Software Engineer
+Company: Phaidra
+Location: Remote - United States
+Salary Min: 0
+Salary Max: 0
+Tags: software, senior, operational, engineer
+Job URL: https://remoteOK.com/remote-jobs/remote-senior-software-engineer-phaidra-1131567
+
+Job Description:
+About Phaidra
+
+Phaidra is building the future of industrial automation.
+
+The world today is filled with static, monolithic infrastructure. Factories, power plants, buildings, etc. operate the same they've operated for decades â because the controls programming is hard-coded. Thousands of lines of rules and heuristics that define how the machines interact with each other. The result of all this hard-coding is that facilities are frozen in time, unable to adapt to their environment while their performance slowly degrades.
+
+Phaidra creates AI-powered control systems for the industrial sector, enabling industrial facilities to automatically learn and improve over time. Specifically:
+
+We use reinforcement learning algorithms to provide this intelligence, converting raw sensor data into high-value actions and decisions.
+We focus on industrial applications, which tend to be well-sensorized with measurable KPIs â perfect for reinforcement learning.
+We enable domain experts (our users) to configure the AI control systems (i.e. agents) without writing code. They define what they want their AI agents to do, and we do it for them.
+
+Our team has a track record of applying AI to some of the toughest problems. From achieving superhuman performance with DeepMind's AlphaGo, to reducing the energy required to cool Google's Data Centers by 40%, we deeply understand AI and how to apply it in production for massive impact.
+
+Phaidraâs ability to achieve its mission is determined by our ability to work together â as defined by our core values: Transparency, Collaboration, Operational Excellence, Ownership, and Empathy. We seek individuals who embody these values, as they are instrumental i<br/><br/>Please mention the word **ASTOUNDED** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

@@ -1,0 +1,72 @@
+Job Title: Lead Software Engineer
+Company: CSC Generation
+Location: Remote - Canada
+Salary Min: 0
+Salary Max: 0
+Tags: software, design, python, django, technical, developer, growth, director, code, voice, manager, api, lead, senior, junior, recruiting, engineer, engineering, digital nomad
+Job URL: https://remoteOK.com/remote-jobs/remote-lead-software-engineer-csc-generation-1131529
+
+Job Description:
+<p>
+</p><p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Design Your Future With Us. Creativity lives here. We celebrate craftsmanship, design, and inspired living. Whether you are in marketing, tech, or logistics, your voice and vision matter. We showcase employee spaces, share design stories, and promote growth through a culture of flexibility, storytelling, and opportunity. From onboarding to day-to-day, we help you bring your style to life.</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">&nbsp;</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Reports to:</strong> Director of Engineering&nbsp;</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Location:</strong>&nbsp;Remote, United States</p>
+<p></p>\n<p></p><p><br></p><b>About the Role</b><div>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Our retail platform is scaling across multiple brands and needs a senior engineer who can own a service area end-to-end â setting technical direction, writing production code daily, and raising the bar for the developers around you. As&nbsp;<strong>Software Engineer (Team Lead)</strong>, you will serve as the technical owner for a core area of our retail service cloud, designing approaches, contributing code, and mentoring engineers while driving the roadmap from legacy replacement through new feature delivery.</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">In your first 6â12 months, success means you have shipped meaningful improvements to the platform, replaced targeted legacy services, and established clear technical standards that the team follows without prompting.</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">This is a lean team. You will own a lot, move fast, and make decisions with full end-to-end responsibility.</p>
+</div><p><br></p><b>What You'll Do</b><div>
+<ul type="disc" style="margin-top: 0in; margin-bottom: 0in;">
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Serve as technical owner for your area or service within the retail service cloud, setting architecture direction and maintaining quality standards</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Design, build, and ship features â reading and writing code daily alongside the team</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Identify and resolve technical challenges across the stack, from profiling and refactoring to scaling the platform</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Replace legacy code and services with modern, maintainable solutions and optimize the overall stack</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Build frameworks and reusable patterns for upcoming projects across the portfolio</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Plan and communicate product roadmaps, triage sprint tickets, and push back on requests when technical tradeoffs demand it</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Mentor junior engineers through code review, pairing, and hands-on problem solving</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Help build the team by driving developer productivity and contributing to hiring decisions</li>
+</ul>
+</div><p><br></p><b>Required Qualifications</b><div>
+<ul type="disc" style="margin-top: 0in; margin-bottom: 0in;">
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Strong hands-on experience with TypeScript/JavaScript, React, and Node.js</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Proficiency / production experience with API Gateway, AWS Lambda, S3, DynamoDB.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Comfortable with IAM and CloudWatch for debugging + least-privilege design</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Experience with Python and Django or comparable server-side frameworks</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Track record of owning a product or service area technically â architecture decisions, code quality, and delivery outcomes</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Demonstrated ability to mentor and elevate other engineers while remaining a significant individual contributor</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Experience replacing or modernizing legacy systems in a production environment</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Comfort triaging competing priorities, planning sprints, and communicating technical details to non-technical stakeholders</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Strong opinions on code quality and engineering best practices, held loosely enough to find the best solution collaboratively</li>
+</ul>
+</div><p><br></p><b>Preferred Qualifications</b><div>
+<ul type="disc" style="margin-top: 0in; margin-bottom: 0in;">
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Experience with retail, e-commerce, or multi-brand platform environments</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Familiarity with cloud-native architectures and microservices patterns</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">Prior experience in a technical lead role on a small, high-output team</li>
+</ul>
+</div><p><br></p><b>Why Join </b><div>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">The people who do best here are builders. They take ownership, move fast, and want to see the direct impact of their work.</p>
+<ul type="disc" style="margin-top: 0in; margin-bottom: 0in;">
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Cross-Functional Impact:</strong>&nbsp;Your technical decisions will shape services that power multiple brands across the portfolio â the scope of your work is visible and immediate.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Skill Building:</strong>&nbsp;Work alongside senior engineers who will challenge your thinking, with daily exposure to modern frameworks, platform-scale problems, and AI-augmented tooling.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>End-to-End Ownership:</strong>&nbsp;Own your service area from architecture through delivery â no waiting for approvals or handing off to another team.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Competitive Benefits:</strong>&nbsp;Paid time off policies, 401(k) match, medical/dental/vision and a variety of supplemental policies, and employee discounts across our portfolio of brands.</li>
+</ul>
+</div><p><br></p><b>Interview Process </b><div>
+<ol type="1" start="1" style="margin-top: 0in; margin-bottom: 0in;">
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Recruiter Screen</strong>&nbsp;- A 30-minute conversation with our recruiting team to align on the role, your background, and what you are looking for.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Hiring Manager Interview</strong>&nbsp;- A deeper conversation focused on your technical leadership experience, how you approach ownership of a service area, and team dynamics.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Technical / Coding Challenge</strong>&nbsp;- A hands-on coding exercise to assess your problem-solving approach, code quality, and comfort working in the stack.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Possible In-Person Interview</strong> - Details and logistics will be arranged with your recruiter.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Reference Checks</strong>&nbsp;- Conducted in parallel with the final stages where possible.</li>
+<li style="margin-top: 0in; margin-right: 0in; margin-bottom: 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><strong>Offer</strong>&nbsp;- We move quickly for the right candidate.</li>
+</ol>
+<div style="margin-top: 0in;margin-right: 0in;margin-bottom: 8pt;line-height: 115%;font-size: 12pt;font-family: Aptos, sans-serif;">
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;"><em>Interview process is subject to change. Any updates will be communicated promptly and clearly.</em></p>
+</div>
+</div><p><br></p><p></p>\n<p>
+</p><p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">CSC Generation is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other characteristic protected by law.</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">The CSC Generation family of brands is committed to providing reasonable accommodations for qualified individuals with disabilities in our job application procedures. If you need assistance or accommodation due to a disability, please contact hrbenefits@cscshared.com.</p>
+<p style="margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sans-serif;">For US-based candidates, this posting is intended for candidates that reside in the following states:<br>AZ, DE, FL, GA, IN, LA, MI, MS, MO, NV, NC, OK, PA, TN, TX, UT, WV, WI, and WY.</p>
+<p></p><br/><br/>Please mention the word **IDEALLY** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

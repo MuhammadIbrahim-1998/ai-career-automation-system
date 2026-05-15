@@ -1,0 +1,23 @@
+Job Title: Senior Software Engineer I
+Company: Clariti Cloud, Inc.
+Location: Canada
+Salary Min: 0
+Salary Max: 0
+Tags: software, saas, salesforce, senior, engineer
+Job URL: https://remoteOK.com/remote-jobs/remote-senior-software-engineer-i-clariti-cloud-inc-1131527
+
+Job Description:
+Join our mission to provide governments with exceptional experiences so they can do the same for their communities!
+
+What do we do?ð¥
+
+We empower governments to deliver exceptional citizen experiences. Check out our âAbout Usâ page for a deep dive into our product and what makes us exceptional.
+
+As a Senior Software Engineer at Clariti, youâll work at the intersection of Salesforce, distributed SaaS architecture, and off-platform services. Our product is delivered as managed packages into customer orgs and supported by Java- and Node-based services, so this role goes beyond single-org Salesforce development.
+
+Youâll help shape how we build, scale, and operate a multi-tenant product used across many customer environments.
+
+What youâll do ð
+
+Architect and develop complex Salesforce solutions designed for managed packages and multi-org distribution
+Design systems that span Salesforce and off-platform services (Java, Node.js, APIs, event-driven integrations)<br/><br/>Please mention the word **COURAGEOUSLY** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

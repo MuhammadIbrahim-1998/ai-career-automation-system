@@ -1,0 +1,25 @@
+Job Title: Principal Data Engineer
+Company: Extend
+Location: Remote
+Salary Min: 0
+Salary Max: 0
+Tags: design, python, technical, financial, analytics, engineer, engineering, digital nomad
+Job URL: https://remoteOK.com/remote-jobs/remote-principal-data-engineer-extend-1131491
+
+Job Description:
+About Extend:
+Extend is revolutionizing the post-purchase experience for retailers and their customers by providing merchants with AI-driven solutions that enhance customer satisfaction and drive revenue growth. Our comprehensive platform offers automated customer service handling, seamless returns/exchange management, end-to-end automated fulfillment, and product protection and shipping protection alongside Extend's best-in-class fraud detection. By integrating leading-edge technology with exceptional customer service, Extend empowers businesses to build trust and loyalty among consumers while reducing costs and increasing profits.
+
+Today, Extend works with more than 1,000 leading merchant partners across industries, including fashion/apparel, cosmetics, furniture, jewelry, consumer electronics, auto parts, sports and fitness, and much more. Extend is backed by some of the most prominent technology investors in the industry, and our headquarters is in downtown San Francisco.
+
+About the Role:
+We're looking for a Principal Data Engineer to help own the analytics data architecture at Extend. This architecture powers reporting, financial processes, and business decisions for teams across the company, and feeds the data our merchants and downstream systems rely on. 
+
+This is a cross-organizational role. Youâll partner with product engineering and architecture on the data flowing upstream into Snowflake, own the design and evolution of the warehouse and reporting layer in the middle, and bridge to analytics engineering and stakeholders on the consumption side. Itâs a hands-on technical leadership role anchored in Snowflake and SQL, with ownership of a portfolio of Python data jobs running on AWS â work youâll set direction on and drive end-to-end.
+
+Key Responsibilities:
+Database Architecture. You own our data warehouse and the reporting layer on top of it, setting patterns for how data is modeled, evolved, and exposed.
+
+Analytics Engineering. You write SQL and dbt models, refactor transformations, and build the tables and views downstream teams rely on.
+
+Cross-Functional Partnership. You proactively engage with teams across the company to understand how data is created and used, identify gaps, and guide solutions. Youâre the connective tissue between product engineering, architecture, analytics, and the bus<br/><br/>Please mention the word **FAULTLESS** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

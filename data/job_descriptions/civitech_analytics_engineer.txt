@@ -1,0 +1,55 @@
+Job Title: Analytics Engineer
+Company: Civitech
+Location: Austin, TX or Remote
+Salary Min: 0
+Salary Max: 0
+Tags: python, support, code, cloud, analytics, engineer, engineering, full-time
+Job URL: https://remoteOK.com/remote-jobs/remote-analytics-engineer-civitech-1131512
+
+Job Description:
+<p>
+</p><p>Civitech is a public benefit corporation dedicated to creating a fairer and more equitable democracy by building the tools and infrastructure needed to increase civic participation, empower Democratic candidates to win, and support the success of progressive causes. Since its founding in 2019, over 500 partners -- a range of nonprofit organizations, national political committees, and individual campaigns -- have utilized Civitechâs tools to reach tens of millions of voters to help create a more equitable and progressive democracy.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Civitech is a remote-first company hiring within our current footprint of 27 states (AL, AK, CA, CO, DC, DE, FL, GA, HI, IL, MA, MD, MN, NC, ND, NH, NJ, NV, NY, OH, SD, TN, TX, VA, WA, WI, WY); Civitech does have an office in Austin, TX.</p>
+<p>&nbsp;</p>
+<p>It is important that our team reflects the diversity of the organizations we seek to serve. We strongly encourage women, people of color, LGBTQIA+ people, and others otherwise underrepresented in the technology sector to apply.</p>
+<p></p>\n<p></p><p><br></p><div><span style="font-size: 11pt; font-family: Arial, sans-serif; color: #1d1c1d;"><strong>This is a temporary role expected to run through November 15, 2026</strong>. While there may be the potential for extension or conversion to a full-time role depending on business needs, candidates should apply with the understanding that the position is currently scoped as a fixed-term role, non-eligible for benefits.</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 11pt; font-family: Arial, sans-serif; color: #1d1c1d;">The Analytics Engineer will turn raw voter, district shape, and product data into clean, well-modeled, trustworthy datasets that power dashboards, pipelines, and the tools our partners rely on every day. This role ensures that decision-makers across Civitech and our partner organizations are working from clean data they can trust, ultimately contributing to our mission of increasing civic participation and supporting progressive causes.</span></div><p><br></p><b>Civitech's Values</b><ul>
+<li><span style="font-size: 11pt;">We act with Integrity â At Civitech, we hold ourselves to the highest standards and value open and transparent communications with all of our stakeholders. Our rigorous approach to product design, testing, and data science leads to accurate assessments of our outcomes and challenges us to constantly improve our tools.</span></li>
+<li><span style="font-size: 11pt;">We are Changemakers â As a team, Civitech seeks to make transformational change in our democracy by eliminating obstacles meant to hamper contribution from every member of the community.</span></li>
+<li><span style="font-size: 11pt;">We are Collaborators - Buoyed by our mission, we look for opportunities to partner with everyone committed to making democracy easier to participate in. We seek to understand the challenges our partners face and use our skills and creativity to help them solve them.</span></li>
+<li><span style="font-size: 11pt;">We are Bold â We recognize that disruptive change won't come with doing business as usual. Civitech seeks to revolutionize civic participation by bringing innovation and creativity to politics.</span></li>
+</ul><p><br></p><b>What You Will Do</b><div>
+<ul>
+<li><span style="font-size: 11pt;">Build and maintain dbt models that transform raw data from multiple sources into clean, tested, well-documented datasets.</span></li>
+<li><span style="font-size: 11pt;">Partner with data scientists, engineers, and product teams to translate ambiguous questions into durable data models rather than one-off queries.</span></li>
+<li><span style="font-size: 11pt;">Improve data quality across the stack by writing tests, defining expectations for critical models, and triaging issues when something looks wrong.</span></li>
+<li><span style="font-size: 11pt;">Document models, metrics, and lineage so engineers, analysts, and partner organizations can self-serve with confidence.</span></li>
+<li><span style="font-size: 11pt;">Use Python where it's the right tool â for orchestration, ad-hoc work, or transformations that don't belong in dbt.</span></li>
+<li><span style="font-size: 11pt;">Raise the bar on analytics engineering practices, including code review, modeling conventions, CI for data, and documentation standards.</span></li>
+<li><span style="font-size: 11pt;">Perform additional engineering and data duties as needed to support the broader team.</span></li>
+</ul>
+</div><p><br></p><b>About You</b><div>
+<ul>
+<li><span style="font-size: 11pt;">3+ years of experience in analytics engineering, data engineering, or a closely related role where modeling data was central to the job.</span></li>
+<li><span style="font-size: 11pt;">Strong SQL skills and production experience with dbt, including tests, documentation, and a sensible approach to project structure.</span></li>
+<li><span style="font-size: 11pt;">Comfortable in Python for data work, including pandas, scripting, and lightweight automation.</span></li>
+<li><span style="font-size: 11pt;">Experience with a cloud data warehouse (Snowflake, BigQuery, Redshift, or similar) and an instinct for writing SQL that performs well at scale.</span></li>
+<li><span style="font-size: 11pt;">A bias toward clarity â you write models, tests, and documentation that other people can actually use.</span></li>
+<li><span style="font-size: 11pt;">Comfort with ambiguity. Political and civic data is messy and timelines are real; you can move quickly without leaving a mess behind you.</span></li>
+<li><span style="font-size: 11pt;">Familiarity with voter file data, VAN/EveryAction, or other political/civic data sources is a plus.</span></li>
+<li><span style="font-size: 11pt;">Experience with orchestration tools (Airflow, Dagster, Prefect) or modern data ingestion (Fivetran, Airbyte) is an advantage.</span></li>
+<li><span style="font-size: 11pt;">Committed to leveraging technology and data products to help Democratic candidates run for office and win, empower progressive causes, and increase civic participation.</span></li>
+</ul>
+</div><p><br></p><p></p>\n<div>$85,000 - $95,000 a year</div>\n<p>
+</p><p>In lieu of a cover letter, please answer the application questions enclosed (weâd like to hear from YOU, not ChatGPTâyes, we can tell!).</p>
+<p>&nbsp;</p>
+<p>Civitech is not able to provide visa sponsorship at this time.</p>
+<p>&nbsp;</p>
+<p><em>Civitech provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, disability, genetic information, marital status, amnesty, or status as a covered veteran in accordance with applicable federal, state and local laws.&nbsp;</em></p>
+<p>&nbsp;</p>
+<p><em>Please be aware that Civitech utilizes E-Verify to verify an employee's eligibility to work in the United States. This step occurs after an offer has been extended and accepted, and after the employee has completed their Form I-9. Please find more information about our participation in this program&nbsp;<a href="https://www.e-verify.gov/employees/employee-rights-and-responsibilities">here</a>.</em></p>
+<p>&nbsp;</p>
+<p>No recruiters or agencies, please!</p>
+<p></p><br/><br/>Please mention the word **LUXURIOUS** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

@@ -1,0 +1,18 @@
+Job Title: Senior Backend Engineer
+Company: Akuity
+Location: 
+Salary Min: 0
+Salary Max: 0
+Tags: saas, developer, software, code, devops, senior, engineer, engineering, backend, digital nomad
+Job URL: https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-akuity-1131479
+
+Job Description:
+<div><h1><span style="font-size: 24pt;"><strong>About Akuity</strong></span></h1>
+<p>With the move to the cloud, Kubernetes has become widely adopted by DevOps and Platform Engineering teams, but it has also added complexity. While scaling Kubernetes at Intuit, the Akuity founders started building Argo CD in order to streamline the adoption of Kubernetes. Argo CD helps developers own, understand and deploy their K8s deployments via GitOps.</p>
+<p>Today, Argo CD is the third most popular project in the CNCF (Cloud Native Computing Foundation) and is used by 70% of companies who are using Kubernetes in production. The list of Argo CD users includes companies like Intuit, BlackRock, Tesla, Major League Baseball, Peloton, and many more.</p>
+<p>The team founded Akuity in 2021 to enable enterprises to ship software faster and more reliably with modern GitOps best practices. The Akuity Platform enables teams to manage the development and deployment across hundreds â if not thousands â of Kubernetes clusters from a single control plane. Trusted by top companies around the globe, the Akuity Platform provides the only end-to-end GitOps platform for the enterprises.</p>
+<p>Our mission is to simplify the software delivery process so that DevOps and Platform Engineering teams can move fast, and deploy code effortlessly without the fear of breaking things.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 24pt;"><strong>The Role</strong></span></p>
+<p>As one of the senior engineers at Akuity, you will work on actively building and continuously improving Akuity's SaaS platform for our global developer community. We're looking for developers who build tools with an empathic mindset and are comfortable cross collaborating with others. You know developers and how to build tools to solve their pain points. Beyond building developer-centric tools, you will mentor team members around engineering best practices, participate in product development, and help contribute to the company's culture. This is an exciting position for someone to impact developer tools and the developer ecosystem globally.&nbsp;</p>
+<h1><span style="font-size: 24pt<br/><br/>Please mention the word **PASSIONATELY** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.
