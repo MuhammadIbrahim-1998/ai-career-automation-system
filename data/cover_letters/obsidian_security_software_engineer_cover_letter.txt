@@ -1,0 +1,10 @@
+Dear Hiring Manager,
+
+I am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.4506.
+
+My background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.
+
+I am particularly interested in roles where I can combine backend engineering, automation, DevOps practices, and AI workflow development to build reliable and useful systems.
+
+Regards,
+Muhammad Ibrahim

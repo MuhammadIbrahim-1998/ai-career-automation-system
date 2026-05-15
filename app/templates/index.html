@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div>
+        <h1>AI Career Automation Dashboard</h1>
+        <p>Track matched jobs, tailored resumes, cover letters, and application status.</p>
+    </div>
+</section>
+
+<section class="stats-grid">
+    <div class="stat-card">
+        <span>Total Jobs</span>
+        <strong>{{ stats.total_jobs }}</strong>
+    </div>
+    <div class="stat-card high">
+        <span>HIGH MATCH</span>
+        <strong>{{ stats.high_match }}</strong>
+    </div>
+    <div class="stat-card medium">
+        <span>MEDIUM MATCH</span>
+        <strong>{{ stats.medium_match }}</strong>
+    </div>
+    <div class="stat-card low">
+        <span>LOW MATCH</span>
+        <strong>{{ stats.low_match }}</strong>
+    </div>
+    <div class="stat-card">
+        <span>Not Applied</span>
+        <strong>{{ stats.not_applied }}</strong>
+    </div>
+</section>
+
+<section class="table-card">
+    <div class="table-header">
+        <h2>Matched Jobs</h2>
+        <p>Data source: data/application_tracker.csv</p>
+    </div>
+
+    {% if rows %}
+    <table>
+        <thead>
+            <tr>
+                <th>Job</th>
+                <th>Match</th>
+                <th>Score</th>
+                <th>Apply Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td class="job-name">{{ row["Job"] }}</td>
+                <td>
+                    <span class="badge {{ row['Match Status'].lower().replace(' ', '-') }}">
+                        {{ row["Match Status"] }}
+                    </span>
+                </td>
+                <td>{{ row["Similarity Score"] }}</td>
+                <td>{{ row["Apply Status"] }}</td>
+                <td class="actions">
+                    <a href="{{ url_for('main.view_file', path=row['Tailored Resume Path']) }}" target="_blank">Resume</a>
+                    <a href="{{ url_for('main.view_file', path=row['Cover Letter Path']) }}" target="_blank">Cover Letter</a>
+                    <a href="{{ url_for('main.job_description', job_filename=row['Job']) }}" target="_blank">Job Description</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <div class="empty-state">
+            <h3>No tracker data found.</h3>
+            <p>Run the backend pipeline first: python scripts/job_scraper_script.py</p>
+        </div>
+    {% endif %}
+</section>
+{% endblock %}

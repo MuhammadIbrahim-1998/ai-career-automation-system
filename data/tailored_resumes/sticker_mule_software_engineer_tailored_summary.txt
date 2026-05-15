@@ -1,0 +1,37 @@
+Tailored Resume Summary
+
+Match Status: MEDIUM MATCH
+Similarity Score: 0.443
+
+This profile is aligned with the target role through the following matching areas:
+
+- p
+- li
+- ai
+- engineer
+- re
+- postgres
+- work
+- build
+
+Suggested Profile Summary:
+
+Backend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent workflow automation, AI agents, and career intelligence systems.
+
+Resume Improvement Suggestions
+
+- Add relevant proof or experience for: p
+- Add relevant proof or experience for: li
+- Add relevant proof or experience for: strong
+- Add relevant proof or experience for: h2
+- Add relevant proof or experience for: ol
+- Add relevant proof or experience for: div
+- Add relevant proof or experience for: br
+- Add relevant proof or experience for: software
+- Add relevant proof or experience for: job
+- Add relevant proof or experience for: what
+- Add relevant proof or experience for: alternative
+- Add relevant proof or experience for: company
+- Add relevant proof or experience for: sticker
+- Add relevant proof or experience for: mule
+- Add relevant proof or experience for: salary

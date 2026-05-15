@@ -20,4 +20,4 @@ Youâll help shape how we build, scale, and operate a multi-tenant product u
 What youâll do ð
 
 Architect and develop complex Salesforce solutions designed for managed packages and multi-org distribution
-Design systems that span Salesforce and off-platform services (Java, Node.js, APIs, event-driven integrations)<br/><br/>Please mention the word **COURAGEOUSLY** and tag RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx when applying to show you read the job post completely (#RMjQwNzpkMDAwOmY6ODQyNzo5ZGExOjUxZDk6NWYwODoyODYx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.
+Design systems that span Salesforce and off-platform services (Java, Node.js, APIs, event-driven integrations)<br/><br/>Please mention the word **COURAGEOUSLY** and tag RODguMTk4Ljk5LjE0Mw== when applying to show you read the job post completely (#RODguMTk4Ljk5LjE0Mw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.

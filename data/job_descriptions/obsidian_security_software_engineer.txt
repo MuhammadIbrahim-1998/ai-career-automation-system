@@ -1,0 +1,30 @@
+Job Title: Software Engineer
+Company: Obsidian Security
+Location: Remote
+Salary Min: 0
+Salary Max: 0
+Tags: infosec, software, saas, security, growth, code, api, microsoft, engineer, backend
+Job URL: https://remoteOK.com/remote-jobs/remote-software-engineer-obsidian-security-1131595
+
+Job Description:
+Founded in 2017, Obsidian Security was created to close a critical gap: securing the SaaS applications where modern business happensâplatforms like Microsoft 365, Salesforce, and hundreds more.
+
+Backed by top investors including Greylock, Norwest Venture Partners, and IVP, weâve built a complete SaaS security platform to reduce risk, detect and respond to threats, and prevent breaches at the source. Our team includes leaders who helped define the categories of endpoint and identity security at CrowdStrike, Okta, Cylance, and Carbon Black.
+
+Now, weâre transforming how SaaS is securedâin the era of agentic AI.
+
+Today, Obsidian is trusted by global enterprises like Snowflake, T-Mobile, and Pure Storage. We protect more than 200 organizations across North America, Europe, the Middle East, Southeast Asia, Australia, and New Zealandâincluding many of the worldâs largest Fortune 1000 and Global 2000 companies.
+
+With strong global momentum, a growing partner ecosystem including SentinelOne, Databricks, and Google Cloud, and a major fundraise on the horizon, weâre scaling quickly toward long-term growth and IPO readiness. Join us as we define the future of SaaS security!
+
+As a Software Engineer at Obsidian, youâll:
+Work across different parts of the product and codebase: backend services, APIs, data pipelines, integrations, product features, and internal tools. This is a good role for someone who likes variety and is comfortable learning a new area without needing everything mapped out in advance.
+
+You might spend one week improving an ingestion service, the next building an API for a customer-facing workflow, and the next helping debug a production issue with another team. The work is practical, product-driven, and close to real customer problems.
+
+What youâll do
+Build and maintain product features across backend services, APIs, data systems, and user-facing workflows
+Work with product managers, designers, security researchers, and other engineers to ship useful, reliable software
+Contribute to services that process SaaS activity, identity data, permissions, alerts, and security findings
+Improve existing systems for performance, reliability, maintainability, and observability
+Write clear, well-tested code and participate in code<br/><br/>Please mention the word **GLAD** and tag RODguMTk4Ljk5LjE0Mw== when applying to show you read the job post completely (#RODguMTk4Ljk5LjE0Mw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.
