@@ -1,0 +1,52 @@
+[
+    {
+        "title": "AI Backend Engineer",
+        "company": "Sample Remote AI Company",
+        "location": "Remote",
+        "salary_range": "1500-2500 USD",
+        "skills_required": [
+            "Python",
+            "Flask",
+            "REST APIs",
+            "LLMs",
+            "RAG",
+            "Vector Database",
+            ".NET",
+            "SQL"
+        ],
+        "match_reason": "Strong match with your AI backend, Flask, API, RAG and .NET background.",
+        "status": "new"
+    },
+    {
+        "title": "AI Automation Engineer",
+        "company": "Sample Automation Startup",
+        "location": "Remote",
+        "salary_range": "1000-2000 USD",
+        "skills_required": [
+            "n8n",
+            "AI Agents",
+            "Python",
+            "API Integration",
+            "Google Sheets",
+            "Gmail Automation"
+        ],
+        "match_reason": "Strong match with your n8n, AI agents, automation and workflow experience.",
+        "status": "new"
+    },
+    {
+        "title": ".NET Backend Developer with AI Integration",
+        "company": "Sample SaaS Company",
+        "location": "Remote",
+        "salary_range": "1200-2200 USD",
+        "skills_required": [
+            "ASP.NET Core",
+            "MVC",
+            "Web API",
+            "SQL Server",
+            "Azure DevOps",
+            "AI API Integration"
+        ],
+        "match_reason": "Strong match with your .NET MVC, Web API, SQL Server and AI integration profile.",
+        "status": "new"
+    }
+]

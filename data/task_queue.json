@@ -1,0 +1,12 @@
+[
+    {
+        "task": "Update Project Memory",
+        "agent": "scripts/project_memory_agent.py",
+        "status": "completed"
+    },
+    {
+        "task": "Run Job Hunter Agent",
+        "agent": "agents/job_hunter_agent.py",
+        "status": "completed"
+    }
+]

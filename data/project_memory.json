@@ -1,0 +1,533 @@
+{
+    "timestamp": "2026-05-15T12:31:30.797891",
+    "project_root": "C:\\Users\\DEll\\ai-career-system",
+    "files_analyzed": 75,
+    "important_files": [
+        {
+            "path": "README.md",
+            "extension": ".md",
+            "size_bytes": 238,
+            "lines": 10,
+            "preview": "# AI Career Automation System\n\n## Features\n- Job Scraping\n- ATS Resume Audit\n- GitHub Analysis\n- AI Agents\n# ai-career-automation-system\nAI automation system for job scraping, ATS resume auditing, GitHub analysis, and AI agents.\n"
+        },
+        {
+            "path": "requirements.txt",
+            "extension": ".txt",
+            "size_bytes": 72,
+            "lines": 6,
+            "preview": "requests\npdfplumber\nsentence-transformers\npandas\nnumpy\nscikit-learn"
+        },
+        {
+            "path": "run_dashboard.py",
+            "extension": ".py",
+            "size_bytes": 105,
+            "lines": 7,
+            "preview": "from app import create_app\n\napp = create_app()\n\nif __name__ == \"__main__\":\n    app.run(debug=True)\n"
+        },
+        {
+            "path": "agents\\decision_engine_agent.py",
+            "extension": ".py",
+            "size_bytes": 2221,
+            "lines": 74,
+            "preview": "import json\nfrom pathlib import Path\nfrom datetime import datetime\n\nROOT_DIR = Path(__file__).resolve().parent.parent\n\nDATA_DIR = ROOT_DIR / \"data\"\nDATA_DIR.mkdir(parents=True, exist_ok=True)\n\nMEMORY_FILE = DATA_DIR / \"project_memory.json\"\nDECISION_FILE = DATA_DIR / \"decision_engine_output.json\"\nLOGS_DIR = DATA_DIR / \"decision_engine_logs\"\nLOGS_DIR.mkdir(parents=True, exist_ok=True)\n\n\ndef load_memory():\n    if not MEMORY_FILE.exists():\n        return {}\n\n    with open(MEMORY_FILE, \"r\", encoding="
+        },
+        {
+            "path": "agents\\job_hunter_agent.py",
+            "extension": ".py",
+            "size_bytes": 3211,
+            "lines": 109,
+            "preview": "import json\nfrom pathlib import Path\nfrom datetime import datetime\n\nROOT_DIR = Path(__file__).resolve().parent.parent\n\nDATA_DIR = ROOT_DIR / \"data\"\nDATA_DIR.mkdir(parents=True, exist_ok=True)\n\nJOBS_FILE = DATA_DIR / \"job_hunter_results.json\"\n\nLOGS_DIR = DATA_DIR / \"job_hunter_logs\"\nLOGS_DIR.mkdir(parents=True, exist_ok=True)\n\n\ndef generate_sample_jobs():\n    return [\n        {\n            \"title\": \"AI Backend Engineer\",\n            \"company\": \"Sample Remote AI Company\",\n            \"location\": \""
+        },
+        {
+            "path": "agents\\orchestrator_agent.py",
+            "extension": ".py",
+            "size_bytes": 3279,
+            "lines": 119,
+            "preview": "import json\nimport subprocess\nimport sys\nfrom pathlib import Path\nfrom datetime import datetime\n\nROOT_DIR = Path(__file__).resolve().parent.parent\n\nif str(ROOT_DIR) not in sys.path:\n    sys.path.append(str(ROOT_DIR))\n\nfrom agents.task_queue_manager import add_task, get_pending_tasks, mark_completed\n\nDATA_DIR = ROOT_DIR / \"data\"\nMEMORY_FILE = DATA_DIR / \"project_memory.json\"\nDECISION_FILE = DATA_DIR / \"decision_engine_output.json\"\n\nLOGS_DIR = DATA_DIR / \"orchestrator_logs\"\nLOGS_DIR.mkdir(parents="
+        },
+        {
+            "path": "agents\\task_queue_manager.py",
+            "extension": ".py",
+            "size_bytes": 1457,
+            "lines": 63,
+            "preview": "import json\nfrom pathlib import Path\n\nROOT_DIR = Path(__file__).resolve().parent.parent\nQUEUE_FILE = ROOT_DIR / \"data\" / \"task_queue.json\"\n\n\ndef load_tasks():\n    if not QUEUE_FILE.exists():\n        QUEUE_FILE.parent.mkdir(parents=True, exist_ok=True)\n        save_tasks([])\n        return []\n\n    with open(QUEUE_FILE, \"r\", encoding=\"utf-8\") as f:\n        return json.load(f)\n\n\ndef save_tasks(tasks):\n    QUEUE_FILE.parent.mkdir(parents=True, exist_ok=True)\n\n    with open(QUEUE_FILE, \"w\", encoding="
+        },
+        {
+            "path": "app\\routes.py",
+            "extension": ".py",
+            "size_bytes": 2085,
+            "lines": 69,
+            "preview": "import csv\nfrom pathlib import Path\nfrom flask import Blueprint, render_template, request, send_file, abort\n\n\nmain_bp = Blueprint(\"main\", __name__)\n\nPROJECT_ROOT = Path(__file__).resolve().parent.parent\nTRACKER_FILE = PROJECT_ROOT / \"data\" / \"application_tracker.csv\"\nJOB_DESCRIPTION_FOLDER = PROJECT_ROOT / \"data\" / \"job_descriptions\"\n\n\ndef read_tracker_rows():\n    if not TRACKER_FILE.exists():\n        return []\n\n    with TRACKER_FILE.open(\"r\", encoding=\"utf-8\", newline=\"\") as file:\n        reade"
+        },
+        {
+            "path": "app\\__init__.py",
+            "extension": ".py",
+            "size_bytes": 165,
+            "lines": 11,
+            "preview": "from flask import Flask\n\n\ndef create_app():\n    app = Flask(__name__)\n\n    from .routes import main_bp\n    app.register_blueprint(main_bp)\n\n    return app\n"
+        },
+        {
+            "path": "data\\application_tracker.csv",
+            "extension": ".csv",
+            "size_bytes": 2127,
+            "lines": 10,
+            "preview": "Job,Match Status,Similarity Score,Tailored Resume Path,Tailored Resume Exists,Cover Letter Path,Cover Letter Exists,Apply Status,Notes\ncentralreach_senior_software_engineer.txt,MEDIUM MATCH,0.3809,data\\tailored_resumes\\centralreach_senior_software_engineer_tailored_summary.txt,YES,data\\cover_letters\\centralreach_senior_software_engineer_cover_letter.txt,YES,NOT APPLIED,\nclariti_cloud_inc_senior_software_engineer_i.txt,HIGH MATCH,0.475,data\\tailored_resumes\\clariti_cloud_inc_senior_software_engin"
+        },
+        {
+            "path": "data\\ats_keywords.txt",
+            "extension": ".txt",
+            "size_bytes": 221,
+            "lines": 22,
+            "preview": ".NET Core\nASP.NET MVC\nASP.NET Web API\nC#\nSQL Server\nEntity Framework Core\nPython\nGitHub Actions\nDevOps\nDocker\nKubernetes\nCloud\nAI\nMachine Learning\nAutomation\nREST APIs\nGit\nGitHub\nn8n\nCI/CD\nBackend\nAPI"
+        },
+        {
+            "path": "data\\cover_letters.txt",
+            "extension": ".txt",
+            "size_bytes": 2471,
+            "lines": 92,
+            "preview": "\n========================================\nCompany: Quanata\nRole: Cloud Enablement Engineer US\n========================================\n\nDear Hiring Manager,\n\nI am excited to apply for the position of Cloud Enablement Engineer US at Quanata.\n\nMy background in .NET development, backend systems, AI automation, APIs, DevOps, and cloud technologies aligns well with the role requirements.\n\nI have experience working with:\n- ASP.NET Core\n- REST APIs\n- Python automation\n- GitHub Actions\n- Docker\n- AI int"
+        },
+        {
+            "path": "data\\decision_engine_output.json",
+            "extension": ".json",
+            "size_bytes": 284,
+            "lines": 7,
+            "preview": "{\n    \"timestamp\": \"2026-05-15T12:28:47.882844\",\n    \"next_action\": \"Project memory is available. System is ready for autonomous workflow.\",\n    \"recommended_task\": \"Run Job Hunter Agent\",\n    \"recommended_agent\": \"agents/job_hunter_agent.py\",\n    \"status\": \"decision_created\"\n}"
+        },
+        {
+            "path": "data\\github_profile_analysis.csv",
+            "extension": ".csv",
+            "size_bytes": 89,
+            "lines": 2,
+            "preview": "name,description,language,stars,forks,has_readme_signal,has_ai_signal,has_dotnet_signal\n"
+        },
+        {
+            "path": "data\\job_description.txt",
+            "extension": ".txt",
+            "size_bytes": 982,
+            "lines": 25,
+            "preview": "Senior Software Engineer\n\nResponsibilities:\n\n* Design, build, and maintain scalable backend services and APIs.\n* Collaborate cross-functionally to translate business needs into technical solutions.\n* Own end-to-end projects from design to deployment and monitoring.\n* Ensure code quality, reliability, and security using testing, CI/CD, and monitoring.\n* Participate in architectural discussions and contribute to technical vision.\n\nRequirements:\n\n* Strong programming skills in TypeScript, Node.js, "
+        },
+        {
+            "path": "data\\job_description_analysis.txt",
+            "extension": ".txt",
+            "size_bytes": 1172,
+            "lines": 41,
+            "preview": "Job Description Analysis\n\nATS Match Score: 17.65%\n\nStrong Matching Keywords:\n- ai\n- backend\n- ci/cd\n\nMissing Important Keywords:\n- api design\n- authentication\n- authorization\n- aws\n- azure\n- distributed systems\n- gcp\n- monitoring\n- next.js\n- node.js\n- react\n- security\n- testing\n- typescript\n\nResume Improvement Suggestions:\n- Add relevant experience or project proof for: api design\n- Add relevant experience or project proof for: authentication\n- Add relevant experience or project proof for: autho"
+        },
+        {
+            "path": "data\\job_listings.csv",
+            "extension": ".csv",
+            "size_bytes": 24856,
+            "lines": 101,
+            "preview": "title,company,location,tags,url,scraped_at\nStaff Engineer Platform Engineering,HighLevel,India,\"design, saas, system, technical, support, developer, software, growth, code, cloud, node.js, api, leader, lead, senior, legal, reliability, engineer, engineering, backend, digital nomad\",https://remoteOK.com/remote-jobs/remote-staff-engineer-platform-engineering-highlevel-1131588,2026-05-15T02:10:53.146304\nBusiness Analyst,Judi Health,Denver,\"analyst, ux, management, operational, medical, health, heal"
+        },
+        {
+            "path": "data\\job_match_report.csv",
+            "extension": ".csv",
+            "size_bytes": 24709,
+            "lines": 100,
+            "preview": "title,company,location,tags,url,scraped_at,match_score\nCloud Enablement Engineer US,Quanata,Remote-US,\"security, technical, software, cloud, engineer, engineering\",https://remoteOK.com/remote-jobs/remote-cloud-enablement-engineer-us-quanata-1131488,2026-05-12T13:30:06.551951,0.06\nSenior Backend Engineer,Akuity,,\"saas, developer, software, code, devops, senior, engineer, engineering, backend, digital nomad\",https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-akuity-1131479,2026-05-12T"
+        },
+        {
+            "path": "data\\master_profile.txt",
+            "extension": ".txt",
+            "size_bytes": 502,
+            "lines": 5,
+            "preview": "Experienced Backend and AI Automation Engineer with expertise in ASP.NET Core, Flask, REST APIs, PostgreSQL, Docker, GitHub Actions, CI/CD pipelines, AI automation workflows, and backend system architecture.\n\nSkilled in Python backend development, AI workflow automation, DevOps concepts, automation pipelines, and scalable backend engineering.\n\nExperience building AI-powered systems including ATS analysis engines, automation platforms, GitHub workflow systems, and intelligent backend pipelines."
+        },
+        {
+            "path": "data\\project_memory.json",
+            "extension": ".json",
+            "size_bytes": 52650,
+            "lines": 533,
+            "preview": "{\n    \"timestamp\": \"2026-05-15T12:28:47.797786\",\n    \"project_root\": \"C:\\\\Users\\\\DEll\\\\ai-career-system\",\n    \"files_analyzed\": 75,\n    \"important_files\": [\n        {\n            \"path\": \"README.md\",\n            \"extension\": \".md\",\n            \"size_bytes\": 238,\n            \"lines\": 10,\n            \"preview\": \"# AI Career Automation System\\n\\n## Features\\n- Job Scraping\\n- ATS Resume Audit\\n- GitHub Analysis\\n- AI Agents\\n# ai-career-automation-system\\nAI automation system for job scraping, ATS "
+        },
+        {
+            "path": "data\\resume.txt",
+            "extension": ".txt",
+            "size_bytes": 429,
+            "lines": 26,
+            "preview": "Muhammad Ibrahim\n\nObjective:\nRemote .NET Backend Developer and AI Automation Engineer focused on backend systems, APIs, cloud, DevOps, automation, and AI integration.\n\nSkills:\n- .NET Core\n- ASP.NET MVC\n- ASP.NET Web API\n- C#\n- SQL Server\n- Entity Framework Core\n- Python\n- GitHub Actions\n- DevOps\n- Docker\n- Kubernetes\n- Cloud\n- AI\n- Machine Learning\n- Automation\n- REST APIs\n- Git\n- GitHub\n- n8n\n- CI/CD"
+        },
+        {
+            "path": "data\\resume_audit_report.txt",
+            "extension": ".txt",
+            "size_bytes": 401,
+            "lines": 13,
+            "preview": "ATS Resume Audit Report\n=======================\n\nTotal Keywords: 22\nKeywords Found: 20\nMissing Keywords: 2\nATS Keyword Score: 90.91%\n\nFound Keywords:\nASP.NET MVC, ASP.NET Web API, SQL Server, Entity Framework Core, Python, GitHub Actions, DevOps, Docker, Kubernetes, Cloud, AI, Machine Learning, Automation, REST APIs, Git, GitHub, n8n, CI/CD, Backend, API\n\nMissing Keywords:\n.NET Core, C#"
+        },
+        {
+            "path": "data\\semantic_job_results.csv",
+            "extension": ".csv",
+            "size_bytes": 662,
+            "lines": 12,
+            "preview": "Job,Similarity Score,Status\ncentralreach_senior_software_engineer.txt,0.3809,MEDIUM MATCH\ncivitech_analytics_engineer.txt,0.3053,LOW MATCH\nclariti_cloud_inc_senior_software_engineer_i.txt,0.475,HIGH MATCH\ncsc_generation_lead_software_engineer.txt,0.3201,LOW MATCH\nhighlevel_staff_engineer_platform_engineering.txt,0.532,HIGH MATCH\nkalepa_staff_backend_engineer_core_product.txt,0.5337,HIGH MATCH\nobsidian_security_software_engineer.txt,0.4506,HIGH MATCH\nphaidra_senior_software_engineer.txt,0.4073,ME"
+        },
+        {
+            "path": "data\\task_queue.json",
+            "extension": ".json",
+            "size_bytes": 277,
+            "lines": 12,
+            "preview": "[\n    {\n        \"task\": \"Update Project Memory\",\n        \"agent\": \"scripts/project_memory_agent.py\",\n        \"status\": \"completed\"\n    },\n    {\n        \"task\": \"Run Job Hunter Agent\",\n        \"agent\": \"agents/job_hunter_agent.py\",\n        \"status\": \"pending\"\n    }\n]"
+        },
+        {
+            "path": "scripts\\application_tracker.py",
+            "extension": ".py",
+            "size_bytes": 2800,
+            "lines": 90,
+            "preview": "import csv\nimport os\nfrom pathlib import Path\n\nRESULTS_FILE = Path(\"data/semantic_job_results.csv\")\nTRACKER_FILE = Path(\"data/application_tracker.csv\")\nTAILORED_RESUMES_FOLDER = Path(\"data/tailored_resumes\")\nCOVER_LETTERS_FOLDER = Path(\"data/cover_letters\")\n\nALLOWED_STATUSES = [\"HIGH MATCH\", \"MEDIUM MATCH\"]\n\n\ndef get_output_paths(job_filename):\n    job_stem = Path(job_filename).stem\n\n    tailored_resume_path = TAILORED_RESUMES_FOLDER / f\"{job_stem}_tailored_summary.txt\"\n    cover_letter_path = C"
+        },
+        {
+            "path": "scripts\\builder_agent.py",
+            "extension": ".py",
+            "size_bytes": 10299,
+            "lines": 462,
+            "preview": "from pathlib import Path\nimport shutil\nfrom datetime import datetime\n\n\nPROJECT_ROOT = Path(__file__).resolve().parent.parent\n\nFILES_TO_CREATE = {\n    \"app/__init__.py\": r'''\nfrom flask import Flask\n\n\ndef create_app():\n    app = Flask(__name__)\n\n    from .routes import main_bp\n    app.register_blueprint(main_bp)\n\n    return app\n''',\n\n    \"app/routes.py\": r'''\nimport csv\nfrom pathlib import Path\nfrom flask import Blueprint, render_template, request, send_file, abort\n\n\nmain_bp = Blueprint(\"main\", _"
+        },
+        {
+            "path": "scripts\\cover_letter_generator.py",
+            "extension": ".py",
+            "size_bytes": 1570,
+            "lines": 73,
+            "preview": "import csv\n\n\ndef load_best_jobs(limit=3):\n    with open(\n        \"data/job_match_report.csv\",\n        mode=\"r\",\n        encoding=\"utf-8\"\n    ) as file:\n        reader = csv.DictReader(file)\n\n        jobs = sorted(\n            list(reader),\n            key=lambda x: float(x[\"match_score\"]),\n            reverse=True\n        )\n\n        return jobs[:limit]\n\n\ndef generate_cover_letter(job):\n    return f\"\"\"\n========================================\nCompany: {job['company']}\nRole: {job['title']}\n======="
+        },
+        {
+            "path": "scripts\\dev_agent.py",
+            "extension": ".py",
+            "size_bytes": 6569,
+            "lines": 234,
+            "preview": "import os\nimport subprocess\nfrom pathlib import Path\nfrom shutil import copy2\nfrom datetime import datetime\n\n\nROOT_DIR = Path(__file__).resolve().parent.parent\nLOG_DIR = ROOT_DIR / \"data\" / \"dev_agent_logs\"\nBACKUP_DIR = ROOT_DIR / \"backups\" / \"dev_agent\"\n\n\nSAFE_COMMANDS = {\n    \"1\": {\n        \"label\": \"Check Python version\",\n        \"args\": [\"python\", \"--version\"]\n    },\n    \"2\": {\n        \"label\": \"Check Git status\",\n        \"args\": [\"git\", \"status\"]\n    },\n    \"3\": {\n        \"label\": \"Run full"
+        },
+        {
+            "path": "scripts\\github_profile_analysis.py",
+            "extension": ".py",
+            "size_bytes": 2332,
+            "lines": 81,
+            "preview": "import csv\nfrom pathlib import Path\nimport requests\n\n\nGITHUB_USERNAME = \"MuhammadIbrahim-1998\"\n\n\ndef fetch_repositories(username):\n    repos = []\n\n    for page in range(1, 5):\n        url = f\"https://api.github.com/users/{username}/repos?per_page=100&page={page}\"\n        response = requests.get(url, timeout=30)\n\n        if response.status_code != 200:\n            print(f\"Failed to fetch repositories: {response.status_code}\")\n            break\n\n        data = response.json()\n\n        if not data:"
+        },
+        {
+            "path": "scripts\\job_description_optimizer.py",
+            "extension": ".py",
+            "size_bytes": 2507,
+            "lines": 72,
+            "preview": "import re\nfrom collections import Counter\n\nTECH_KEYWORDS = [\n    \"python\", \"c#\", \".net\", \"asp.net core\", \"asp.net mvc\", \"flask\", \"fastapi\",\n    \"javascript\", \"typescript\", \"node.js\", \"next.js\", \"react\",\n    \"rest api\", \"restful api\", \"graphql\", \"microservices\",\n    \"postgresql\", \"sql server\", \"mysql\", \"mongodb\", \"redis\",\n    \"docker\", \"kubernetes\", \"github actions\", \"azure devops\", \"ci/cd\",\n    \"aws\", \"azure\", \"gcp\", \"cloud\",\n    \"ai\", \"llm\", \"rag\", \"automation\", \"ai agents\",\n    \"authentication"
+        },
+        {
+            "path": "scripts\\job_matcher.py",
+            "extension": ".py",
+            "size_bytes": 2013,
+            "lines": 83,
+            "preview": "import csv\n\n\ndef load_jobs():\n    with open(\"data/job_listings.csv\", mode=\"r\", encoding=\"utf-8\") as file:\n        reader = csv.DictReader(file)\n        return list(reader)\n\n\ndef load_resume():\n    with open(\"data/resume.txt\", mode=\"r\", encoding=\"utf-8\") as file:\n        return file.read().lower()\n\n\ndef calculate_match_score(resume_text, job):\n    resume_words = set(resume_text.split())\n\n    job_text = f\"\"\"\n    {job.get('title', '')}\n    {job.get('company', '')}\n    {job.get('tags', '')}\n    \"\"\"."
+        },
+        {
+            "path": "scripts\\job_scraper_script.py",
+            "extension": ".py",
+            "size_bytes": 6122,
+            "lines": 266,
+            "preview": "import re\nimport subprocess\nimport sys\nfrom datetime import datetime\nfrom pathlib import Path\n\nimport requests\n\n\nJOB_API_URL = \"https://remoteok.com/api\"\nJOB_OUTPUT_DIR = Path(\"data/job_descriptions\")\nSEMANTIC_GATEKEEPER_SCRIPT = Path(\"scripts/semantic_gatekeeper.py\")\n\nMAX_JOBS_TO_SAVE = 10\n\nALLOWED_TITLE_TERMS = [\n    \"software engineer\",\n    \"backend engineer\",\n    \"backend developer\",\n    \"python developer\",\n    \"python engineer\",\n    \"ai engineer\",\n    \"ml engineer\",\n    \"machine learning en"
+        },
+        {
+            "path": "scripts\\project_memory_agent.py",
+            "extension": ".py",
+            "size_bytes": 3506,
+            "lines": 142,
+            "preview": "import os\nimport json\nfrom pathlib import Path\nfrom datetime import datetime\n\nROOT_DIR = Path(__file__).resolve().parent.parent\n\nDATA_DIR = ROOT_DIR / \"data\"\nDATA_DIR.mkdir(parents=True, exist_ok=True)\n\nMEMORY_FILE = DATA_DIR / \"project_memory.json\"\n\nLOGS_DIR = DATA_DIR / \"dev_agent_logs\"\nLOGS_DIR.mkdir(parents=True, exist_ok=True)\n\nIGNORE_FOLDERS = {\n    \".git\",\n    \"__pycache__\",\n    \".venv\",\n    \"venv\",\n    \"env\",\n    \"node_modules\",\n    \".idea\",\n    \".vscode\"\n}\n\nIMPORTANT_EXTENSIONS = {\n    "
+        },
+        {
+            "path": "scripts\\resume_audit.py",
+            "extension": ".py",
+            "size_bytes": 2205,
+            "lines": 87,
+            "preview": "import re\nfrom pathlib import Path\nimport pdfplumber\n\n\ndef extract_text_from_pdf(pdf_path):\n    text = \"\"\n\n    with pdfplumber.open(pdf_path) as pdf:\n        for page in pdf.pages:\n            text += (page.extract_text() or \"\") + \"\\n\"\n\n    return text\n\n\ndef read_resume(file_path):\n    file_path = Path(file_path)\n\n    if file_path.suffix.lower() == \".pdf\":\n        return extract_text_from_pdf(file_path)\n\n    return file_path.read_text(encoding=\"utf-8\")\n\n\ndef load_keywords(keywords_file_path):\n  "
+        },
+        {
+            "path": "scripts\\resume_tailoring_agent.py",
+            "extension": ".py",
+            "size_bytes": 7505,
+            "lines": 218,
+            "preview": "import os\nimport re\nimport csv\nimport subprocess\nimport sys\nfrom collections import Counter\nfrom pathlib import Path\n\nRESULTS_FILE = \"data/semantic_job_results.csv\"\nMASTER_PROFILE_FILE = \"data/master_profile.txt\"\nJOB_DESCRIPTIONS_FOLDER = \"data/job_descriptions\"\nTAILORED_RESUMES_FOLDER = \"data/tailored_resumes\"\nCOVER_LETTERS_FOLDER = \"data/cover_letters\"\nAPPLICATION_TRACKER_SCRIPT = Path(\"scripts/application_tracker.py\")\n\nALLOWED_STATUSES = [\"HIGH MATCH\", \"MEDIUM MATCH\"]\n\n\ndef read_master_profil"
+        },
+        {
+            "path": "scripts\\semantic_gatekeeper.py",
+            "extension": ".py",
+            "size_bytes": 3840,
+            "lines": 136,
+            "preview": "import os\nimport pandas as pd\nimport csv\nimport subprocess\nimport sys\nfrom pathlib import Path\nfrom sentence_transformers import SentenceTransformer\nfrom sklearn.metrics.pairwise import cosine_similarity\n\n# Load embedding model once\nmodel = SentenceTransformer('all-MiniLM-L6-v2')\n\nHIGH_MATCH_THRESHOLD = 0.45\nMEDIUM_MATCH_THRESHOLD = 0.35\n\n\ndef read_master_profile():\n    with open('data/master_profile.txt', 'r', encoding='utf-8') as f:\n        return f.read()\n\n\ndef load_job_descriptions(folder_pa"
+        },
+        {
+            "path": "data\\cover_letters\\akuity_senior_backend_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 628,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.4522.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, aut"
+        },
+        {
+            "path": "data\\cover_letters\\centralreach_senior_software_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.3809.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\cover_letters\\clariti_cloud_inc_senior_software_engineer_i_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 627,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.475.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, auto"
+        },
+        {
+            "path": "data\\cover_letters\\extend_principal_data_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.4102.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\cover_letters\\highlevel_staff_engineer_platform_engineering_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 627,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.532.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, auto"
+        },
+        {
+            "path": "data\\cover_letters\\job1_description_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 657,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. My background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design.\n\nI have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools. This gives me a strong foundation to contribute to engineering teams working on automation, backend services, and AI-enabled products.\n\nI am particularly interested in roles where I can com"
+        },
+        {
+            "path": "data\\cover_letters\\kalepa_staff_backend_engineer_core_product_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 628,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.5337.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, aut"
+        },
+        {
+            "path": "data\\cover_letters\\obsidian_security_software_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 628,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as HIGH MATCH with a similarity score of 0.4506.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, aut"
+        },
+        {
+            "path": "data\\cover_letters\\phaidra_senior_software_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.4073.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\cover_letters\\quanata_cloud_enablement_engineer_us_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.3955.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\cover_letters\\sticker_mule_software_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 629,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.443.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, au"
+        },
+        {
+            "path": "data\\cover_letters\\valon_mortgage_senior_data_engineer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.3601.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\cover_letters\\wealthsimple_technologies_senior_ai_system_software_developer_cover_letter.txt",
+            "extension": ".txt",
+            "size_bytes": 630,
+            "lines": 10,
+            "preview": "Dear Hiring Manager,\n\nI am excited to apply for this role. Based on my profile analysis, this opportunity is marked as MEDIUM MATCH with a similarity score of 0.3834.\n\nMy background combines backend development, AI automation, REST API development, CI/CD workflows, and scalable system design. I have worked on backend automation systems, AI-powered workflows, GitHub Actions pipelines, and intelligent analysis tools.\n\nI am particularly interested in roles where I can combine backend engineering, a"
+        },
+        {
+            "path": "data\\job_descriptions\\centralreach_senior_software_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 1329,
+            "lines": 10,
+            "preview": "Job Title: Senior Software Engineer\nCompany: CentralReach\nLocation: Remote - US\nSalary Min: 0\nSalary Max: 0\nTags: software, saas, senior, engineer\nJob URL: https://remoteOK.com/remote-jobs/remote-senior-software-engineer-centralreach-1131578\n\nJob Description:\nCentralReach is a leading provider of autism and IDD care software for Applied Behavior Analysis (ABA), multidisciplinary therapy, and special education. Trusted by more than 200,000 users, we enable therapy providers, educators, and employ"
+        },
+        {
+            "path": "data\\job_descriptions\\civitech_analytics_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 8025,
+            "lines": 55,
+            "preview": "Job Title: Analytics Engineer\nCompany: Civitech\nLocation: Austin, TX or Remote\nSalary Min: 0\nSalary Max: 0\nTags: python, support, code, cloud, analytics, engineer, engineering, full-time\nJob URL: https://remoteOK.com/remote-jobs/remote-analytics-engineer-civitech-1131512\n\nJob Description:\n<p>\n</p><p>Civitech is a public benefit corporation dedicated to creating a fairer and more equitable democracy by building the tools and infrastructure needed to increase civic participation, empower Democrati"
+        },
+        {
+            "path": "data\\job_descriptions\\clariti_cloud_inc_senior_software_engineer_i.txt",
+            "extension": ".txt",
+            "size_bytes": 1611,
+            "lines": 23,
+            "preview": "Job Title: Senior Software Engineer I\nCompany: Clariti Cloud, Inc.\nLocation: Canada\nSalary Min: 0\nSalary Max: 0\nTags: software, saas, salesforce, senior, engineer\nJob URL: https://remoteOK.com/remote-jobs/remote-senior-software-engineer-i-clariti-cloud-inc-1131527\n\nJob Description:\nJoin our mission to provide governments with exceptional experiences so they can do the same for their communities!\n\nWhat do we do?\u00f0\u009f\u0092\u00a5\n\nWe empower governments to deliver exceptional citizen experiences. Check out our"
+        },
+        {
+            "path": "data\\job_descriptions\\csc_generation_lead_software_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 12835,
+            "lines": 72,
+            "preview": "Job Title: Lead Software Engineer\nCompany: CSC Generation\nLocation: Remote - Canada\nSalary Min: 0\nSalary Max: 0\nTags: software, design, python, django, technical, developer, growth, director, code, voice, manager, api, lead, senior, junior, recruiting, engineer, engineering, digital nomad\nJob URL: https://remoteOK.com/remote-jobs/remote-lead-software-engineer-csc-generation-1131529\n\nJob Description:\n<p>\n</p><p style=\"margin: 0in 0in 8pt; line-height: 115%; font-size: 12pt; font-family: Aptos, sa"
+        },
+        {
+            "path": "data\\job_descriptions\\highlevel_staff_engineer_platform_engineering.txt",
+            "extension": ".txt",
+            "size_bytes": 7642,
+            "lines": 40,
+            "preview": "Job Title: Staff Engineer Platform Engineering\nCompany: HighLevel\nLocation: India\nSalary Min: 0\nSalary Max: 0\nTags: design, saas, system, technical, support, developer, software, growth, code, cloud, node.js, api, leader, lead, senior, legal, reliability, engineer, engineering, backend, digital nomad\nJob URL: https://remoteOK.com/remote-jobs/remote-staff-engineer-platform-engineering-highlevel-1131588\n\nJob Description:\n<p><strong>About HighLevel:</strong><br>HighLevel is an AI-powered business o"
+        },
+        {
+            "path": "data\\job_descriptions\\kalepa_staff_backend_engineer_core_product.txt",
+            "extension": ".txt",
+            "size_bytes": 2758,
+            "lines": 20,
+            "preview": "Job Title: Staff Backend Engineer Core Product\nCompany: Kalepa\nLocation: USA\nSalary Min: 0\nSalary Max: 0\nTags: system, software, engineer, backend\nJob URL: https://remoteOK.com/remote-jobs/remote-staff-backend-engineer-core-product-kalepa-1131586\n\nJob Description:\nAbout Kalepa:\nInsurance is a $7T global industry built on professional labor: underwriting, claims, pricing, operations, and distribution. Kalepa is building AI that can perform that work.\nWe create professional-grade AI systems for in"
+        },
+        {
+            "path": "data\\job_descriptions\\obsidian_security_software_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 2927,
+            "lines": 30,
+            "preview": "Job Title: Software Engineer\nCompany: Obsidian Security\nLocation: Remote\nSalary Min: 0\nSalary Max: 0\nTags: infosec, software, saas, security, growth, code, api, microsoft, engineer, backend\nJob URL: https://remoteOK.com/remote-jobs/remote-software-engineer-obsidian-security-1131595\n\nJob Description:\nFounded in 2017, Obsidian Security was created to close a critical gap: securing the SaaS applications where modern business happens\u00e2\u0080\u0094platforms like Microsoft 365, Salesforce, and hundreds more.\n\nBa"
+        },
+        {
+            "path": "data\\job_descriptions\\phaidra_senior_software_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 2303,
+            "lines": 24,
+            "preview": "Job Title: Senior Software Engineer\nCompany: Phaidra\nLocation: Remote - United States\nSalary Min: 0\nSalary Max: 0\nTags: software, senior, operational, engineer\nJob URL: https://remoteOK.com/remote-jobs/remote-senior-software-engineer-phaidra-1131567\n\nJob Description:\nAbout Phaidra\n\nPhaidra is building the future of industrial automation.\n\nThe world today is filled with static, monolithic infrastructure. Factories, power plants, buildings, etc. operate the same they've operated for decades \u00e2\u0080\u0094 be"
+        },
+        {
+            "path": "data\\job_descriptions\\sticker_mule_software_engineer.txt",
+            "extension": ".txt",
+            "size_bytes": 2464,
+            "lines": 10,
+            "preview": "Job Title: Software engineer\nCompany: Sticker Mule\nLocation: \nSalary Min: 150000\nSalary Max: 250000\nTags: engineer, golang, docker, redis, gcp, postgres\nJob URL: https://remoteOK.com/remote-jobs/remote-software-engineer-sticker-mule-1131592\n\nJob Description:\n<div class=\"_descriptionText_135ul_202\"><p>Sticker Mule is building the Internet's most lucrative commerce platform by combining software, manufacturing, and AI into one fully integrated stack. No print company, or pure software company for "
+        },
+        {
+            "path": "data\\job_descriptions\\wealthsimple_technologies_senior_ai_system_software_developer.txt",
+            "extension": ".txt",
+            "size_bytes": 9083,
+            "lines": 10,
+            "preview": "Job Title: Senior AI System Software Developer\nCompany: Wealthsimple Technologies\nLocation: \nSalary Min: 151200\nSalary Max: 189000\nTags: system, developer, software, react, redis, frontend, full-stack, technical, support, financial, senior, golang, health, engineering, backend, digital nomad\nJob URL: https://remoteOK.com/remote-jobs/remote-senior-ai-system-software-developer-wealthsimple-technologies-1131572\n\nJob Description:\n<h2><strong>Build something people love</strong></h2><p style=\"min-hei"
+        },
+        {
+            "path": "data\\tailored_resumes\\akuity_senior_backend_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1372,
+            "lines": 38,
+            "preview": "Tailored Resume Summary\n\nMatch Status: HIGH MATCH\nSimilarity Score: 0.4522\n\nThis profile is aligned with the target role through the following matching areas:\n\n- p\n- platform\n- engineering\n- cd\n- devops\n- building\n- backend\n- engineer\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture,"
+        },
+        {
+            "path": "data\\tailored_resumes\\centralreach_senior_software_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1321,
+            "lines": 32,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.3809\n\nThis profile is aligned with the target role through the following matching areas:\n\n- engineer\n- analysis\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent workflow automa"
+        },
+        {
+            "path": "data\\tailored_resumes\\clariti_cloud_inc_senior_software_engineer_i_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1331,
+            "lines": 34,
+            "preview": "Tailored Resume Summary\n\nMatch Status: HIGH MATCH\nSimilarity Score: 0.475\n\nThis profile is aligned with the target role through the following matching areas:\n\n- do\n- engineer\n- ll\n- i\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent workflow automa"
+        },
+        {
+            "path": "data\\tailored_resumes\\extend_principal_data_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1357,
+            "lines": 36,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.4102\n\nThis profile is aligned with the target role through the following matching areas:\n\n- engineering\n- architecture\n- engineer\n- re\n- python\n- s\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong "
+        },
+        {
+            "path": "data\\tailored_resumes\\highlevel_staff_engineer_platform_engineering_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1387,
+            "lines": 40,
+            "preview": "Tailored Resume Summary\n\nMatch Status: HIGH MATCH\nSimilarity Score: 0.532\n\nThis profile is aligned with the target role through the following matching areas:\n\n- li\n- p\n- engineering\n- systems\n- experience\n- platform\n- b\n- building\n- engineer\n- build\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backen"
+        },
+        {
+            "path": "data\\tailored_resumes\\job1_description_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1110,
+            "lines": 36,
+            "preview": "Tailored Resume Summary\n\nThis profile is aligned with the target role through the following matching areas:\n\n- backend\n- experience\n- systems\n- engineer\n- apis\n- python\n- rest\n- api\n- development\n- ci\n- cd\n- pipelines\n- docker\n- platforms\n- building\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backen"
+        },
+        {
+            "path": "data\\tailored_resumes\\kalepa_staff_backend_engineer_core_product_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1365,
+            "lines": 39,
+            "preview": "Tailored Resume Summary\n\nMatch Status: HIGH MATCH\nSimilarity Score: 0.5337\n\nThis profile is aligned with the target role through the following matching areas:\n\n- ai\n- re\n- work\n- backend\n- engineer\n- core\n- system\n- building\n- build\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, w"
+        },
+        {
+            "path": "data\\tailored_resumes\\obsidian_security_software_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1350,
+            "lines": 37,
+            "preview": "Tailored Resume Summary\n\nMatch Status: HIGH MATCH\nSimilarity Score: 0.4506\n\nThis profile is aligned with the target role through the following matching areas:\n\n- engineer\n- backend\n- including\n- re\n- work\n- api\n- ll\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focu"
+        },
+        {
+            "path": "data\\tailored_resumes\\phaidra_senior_software_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1351,
+            "lines": 35,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.4073\n\nThis profile is aligned with the target role through the following matching areas:\n\n- ai\n- s\n- engineer\n- systems\n- do\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent wo"
+        },
+        {
+            "path": "data\\tailored_resumes\\quanata_cloud_enablement_engineer_us_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1328,
+            "lines": 33,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.3955\n\nThis profile is aligned with the target role through the following matching areas:\n\n- s\n- engineer\n- engineering\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong focus on intelligent workflow"
+        },
+        {
+            "path": "data\\tailored_resumes\\sticker_mule_software_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1336,
+            "lines": 38,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.443\n\nThis profile is aligned with the target role through the following matching areas:\n\n- p\n- li\n- ai\n- engineer\n- re\n- postgres\n- work\n- build\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong foc"
+        },
+        {
+            "path": "data\\tailored_resumes\\valon_mortgage_senior_data_engineer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1344,
+            "lines": 37,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.3601\n\nThis profile is aligned with the target role through the following matching areas:\n\n- p\n- li\n- experience\n- em\n- re\n- building\n- pipelines\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture, with a strong foc"
+        },
+        {
+            "path": "data\\tailored_resumes\\wealthsimple_technologies_senior_ai_system_software_developer_tailored_summary.txt",
+            "extension": ".txt",
+            "size_bytes": 1365,
+            "lines": 40,
+            "preview": "Tailored Resume Summary\n\nMatch Status: MEDIUM MATCH\nSimilarity Score: 0.3834\n\nThis profile is aligned with the target role through the following matching areas:\n\n- p\n- li\n- ai\n- re\n- work\n- building\n- experience\n- s\n- systems\n- backend\n\nSuggested Profile Summary:\n\nBackend and AI Automation Engineer with experience in building REST APIs, automation workflows, CI/CD pipelines, and AI-powered backend systems. Skilled in Python, ASP.NET Core, Docker, GitHub Actions, and scalable backend architecture"
+        },
+        {
+            "path": "app\\templates\\base.html",
+            "extension": ".html",
+            "size_bytes": 618,
+            "lines": 24,
+            "preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>AI Career Automation Dashboard</title>\n    <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='css/style.css') }}\">\n</head>\n<body>\n    <div class=\"layout\">\n        <aside class=\"sidebar\">\n            <h2>AI Career OS</h2>\n            <p>Automation Dashboard</p>\n            <nav>\n                <a href=\"{{ url_for('main.dashboard') }}\">Dashboard</a>\n            </nav>\n        </aside>\n\n        <main class=\"cont"
+        },
+        {
+            "path": "app\\templates\\index.html",
+            "extension": ".html",
+            "size_bytes": 2590,
+            "lines": 79,
+            "preview": "{% extends \"base.html\" %}\n\n{% block content %}\n<section class=\"hero\">\n    <div>\n        <h1>AI Career Automation Dashboard</h1>\n        <p>Track matched jobs, tailored resumes, cover letters, and application status.</p>\n    </div>\n</section>\n\n<section class=\"stats-grid\">\n    <div class=\"stat-card\">\n        <span>Total Jobs</span>\n        <strong>{{ stats.total_jobs }}</strong>\n    </div>\n    <div class=\"stat-card high\">\n        <span>HIGH MATCH</span>\n        <strong>{{ stats.high_match }}</stro"
+        },
+        {
+            "path": "app\\static\\css\\style.css",
+            "extension": ".css",
+            "size_bytes": 3082,
+            "lines": 206,
+            "preview": "* {\n    box-sizing: border-box;\n}\n\nbody {\n    margin: 0;\n    font-family: Arial, sans-serif;\n    background: #0f172a;\n    color: #e5e7eb;\n}\n\n.layout {\n    display: flex;\n    min-height: 100vh;\n}\n\n.sidebar {\n    width: 260px;\n    background: #020617;\n    padding: 28px;\n    border-right: 1px solid #1e293b;\n}\n\n.sidebar h2 {\n    margin: 0;\n    color: #ffffff;\n}\n\n.sidebar p {\n    color: #94a3b8;\n    margin-bottom: 30px;\n}\n\n.sidebar a {\n    display: block;\n    color: #cbd5e1;\n    text-decoration: none"
+        }
+    ],
+    "status": "memory_updated"
+}
