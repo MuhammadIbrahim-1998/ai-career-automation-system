@@ -10,4 +10,5 @@ my_python_project,,Python,0,0,False,False,False
 project-nexus,,C#,0,0,False,False,False
 server-client,,C#,0,0,False,False,False
 TaskManager-ASP.NET-Core-MVC,"Task Manager with ASP.NET Core MVC, Identity, role-based authorization, and generic repository pattern",C#,0,0,False,False,True
+Trump-Iran-war-dataset,"Trump's Iran-War statements vs. independent fact-checks — Python data pipeline, star-schema dataset, and Power BI dashboard",Python,0,0,False,False,False
 webproject,,HTML,0,0,False,False,False
