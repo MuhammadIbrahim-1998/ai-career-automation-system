@@ -1,4 +1,5 @@
 name,description,language,stars,forks,has_readme_signal,has_ai_signal,has_dotnet_signal
+ai-career-automation-system,"AI automation system for job scraping, ATS resume auditing, GitHub analysis, and AI agents.",Python,0,0,False,True,False
 Ai_emotion_trainer,,JavaScript,0,0,False,True,False
 AI_Resume_Builder,,Python,0,0,False,True,False
 AR,,Not specified,0,0,False,False,False
