@@ -7,6 +7,7 @@ C-project,,C#,0,0,False,False,False
 dotnet-banking-crud,,C#,0,0,False,False,True
 dotnet-banking-crud-EFcore,,C#,0,0,False,False,True
 java,,Java,0,0,False,False,False
+LLMCostAnalysis,"Analyzing real Claude & DeepSeek API usage from Project Nexus — a production multi-agent job search system. Data cleaning, EDA, and cost/efficiency insights using Python, Power BI, and Kaggle.",Python,0,0,False,True,False
 my_python_project,,Python,0,0,False,False,False
 project-nexus,,C#,0,0,False,False,False
 server-client,,C#,0,0,False,False,False
