@@ -1,1 +1,17 @@
 name,description,language,stars,forks,has_readme_signal,has_ai_signal,has_dotnet_signal
+aegis-security-lab,"Intentionally vulnerable .NET Clean Architecture Web API for authentication/authorization security training (JWT signature bypass, hardcoded keys, broken role checks). Local training lab only — not for production use.",C#,0,0,False,True,True
+ai-career-automation-system,"AI automation system for job scraping, ATS resume auditing, GitHub analysis, and AI agents.",Python,0,0,False,True,False
+Ai_emotion_trainer,,JavaScript,0,0,False,True,False
+AI_Resume_Builder,,Python,0,0,False,True,False
+AR,,Not specified,0,0,False,False,False
+C-project,,C#,0,0,False,False,False
+dotnet-banking-crud,,C#,0,0,False,False,True
+dotnet-banking-crud-EFcore,,C#,0,0,False,False,True
+java,,Java,0,0,False,False,False
+LLMCostAnalysis,"Analyzing real Claude & DeepSeek API usage from Project Nexus — a production multi-agent job search system. Data cleaning, EDA, and cost/efficiency insights using Python, Power BI, and Kaggle.",Python,0,0,False,True,False
+my_python_project,,Python,0,0,False,False,False
+project-nexus,,C#,0,0,False,False,False
+server-client,,C#,0,0,False,False,False
+TaskManager-ASP.NET-Core-MVC,"Task Manager with ASP.NET Core MVC, Identity, role-based authorization, and generic repository pattern",C#,0,0,False,False,True
+Trump-Iran-war-dataset,"Trump's Iran-War statements vs. independent fact-checks — Python data pipeline, star-schema dataset, and Power BI dashboard",Python,0,0,False,False,False
+webproject,,HTML,0,0,False,False,False
